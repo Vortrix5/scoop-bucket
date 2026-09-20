@@ -1,12 +1,12 @@
 {
-    "version": "0.6.0",
-    "description": "AI-assisted Windows maintenance CLI/TUI — sift junk, analyze disks, manage apps, updates and files.",
+    "version": "0.9.0",
+    "description": "AI-assisted Windows maintenance CLI/TUI - sift junk, analyze disks, manage apps, updates and files.",
     "homepage": "https://github.com/Vortrix5/sifty",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Vortrix5/sifty/releases/download/v0.6.0/sifty.exe",
-            "hash": "7c903b0bd474e08f4f87a078fab2e6945292d8906a739434c924141120377c43",
+            "url": "https://github.com/Vortrix5/sifty/releases/download/v0.9.0/sifty.exe",
+            "hash": "28d796002f00687778a33dcd67616969de5d886a6c0e1698ee6de9375a11ffd6",
             "bin": "sifty.exe"
         }
     },
