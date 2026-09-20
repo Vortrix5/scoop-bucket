@@ -1,0 +1,23 @@
+# Runs scoop's checkver/autoupdate against bucket/sifty.json and commits the
+# new version + hash when a release appears. Without this the autoupdate block
+# in the manifest never fires, and the bucket silently serves an old version.
+name: Excavator
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  excavate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Update manifests
+        uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SKIP_UPDATED: '1'
